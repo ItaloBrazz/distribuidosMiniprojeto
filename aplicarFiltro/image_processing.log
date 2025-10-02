@@ -1,0 +1,56 @@
+2025-10-01 21:28:26,736 - MainThread - INFO - Iniciando processamento de test_image.jpg com filtro sepia
+2025-10-01 21:28:26,736 - Worker_0 - INFO - [Load-Thread] Carregando imagem: test_image.jpg
+2025-10-01 21:28:26,746 - Worker_0 - INFO - [Load-Thread] Imagem carregada em 0.010s - Dimensões: (800, 600)
+2025-10-01 21:28:26,746 - Worker_0 - INFO - [Filter-Thread] Aplicando filtro sepia
+2025-10-01 21:28:26,781 - Worker_0 - INFO - [Filter-Thread] Filtro sepia aplicado em 0.035s
+2025-10-01 21:28:26,781 - Worker_0 - INFO - [Save-Thread] Salvando imagem: output/test_image_sepia.jpg
+2025-10-01 21:28:26,783 - Worker_0 - INFO - [Save-Thread] Imagem salva em 0.001s
+2025-10-01 21:28:26,783 - MainThread - INFO - Processamento concluído em 0.047s
+2025-10-01 21:29:29,947 - MainThread - INFO - Iniciando processamento de test_image.jpg com filtro black_white
+2025-10-01 21:29:29,947 - Worker_0 - INFO - [Load-Thread] Carregando imagem: test_image.jpg
+2025-10-01 21:29:29,956 - Worker_0 - INFO - [Load-Thread] Imagem carregada em 0.009s - Dimensões: (800, 600)
+2025-10-01 21:29:29,956 - Worker_0 - INFO - [Filter-Thread] Aplicando filtro black_white
+2025-10-01 21:29:29,963 - Worker_0 - INFO - [Filter-Thread] Filtro black_white aplicado em 0.006s
+2025-10-01 21:29:29,963 - Worker_0 - INFO - [Save-Thread] Salvando imagem: output/test_image_black_white.jpg
+2025-10-01 21:29:29,964 - Worker_0 - INFO - [Save-Thread] Imagem salva em 0.001s
+2025-10-01 21:29:29,964 - MainThread - INFO - Processamento concluído em 0.017s
+2025-10-01 21:30:34,794 - MainThread - INFO - Iniciando processamento de minhas_imagens/test_image.jpg com filtro vintage
+2025-10-01 21:30:34,794 - Worker_0 - INFO - [Load-Thread] Carregando imagem: minhas_imagens/test_image.jpg
+2025-10-01 21:30:34,803 - Worker_0 - INFO - [Load-Thread] Imagem carregada em 0.009s - Dimensões: (800, 600)
+2025-10-01 21:30:34,803 - Worker_0 - INFO - [Filter-Thread] Aplicando filtro vintage
+2025-10-01 21:30:34,840 - Worker_0 - INFO - [Filter-Thread] Filtro vintage aplicado em 0.037s
+2025-10-01 21:30:34,840 - Worker_0 - INFO - [Save-Thread] Salvando imagem: output/test_image_vintage.jpg
+2025-10-01 21:30:34,841 - Worker_0 - INFO - [Save-Thread] Imagem salva em 0.001s
+2025-10-01 21:30:34,841 - MainThread - INFO - Processamento concluído em 0.048s
+2025-10-01 21:38:27,860 - MainThread - INFO - Iniciando processamento de minhas_imagens/pikachu.jpeg com filtro sepia
+2025-10-01 21:38:27,860 - Worker_0 - INFO - [Load-Thread] Carregando imagem: minhas_imagens/pikachu.jpeg
+2025-10-01 21:38:27,870 - Worker_0 - INFO - [Load-Thread] Imagem carregada em 0.010s - Dimensões: (640, 743)
+2025-10-01 21:38:27,870 - Worker_0 - INFO - [Filter-Thread] Aplicando filtro sepia
+2025-10-01 21:38:27,901 - Worker_0 - INFO - [Filter-Thread] Filtro sepia aplicado em 0.031s
+2025-10-01 21:38:27,901 - Worker_0 - INFO - [Save-Thread] Salvando imagem: output/pikachu_sepia.jpg
+2025-10-01 21:38:27,903 - Worker_0 - INFO - [Save-Thread] Imagem salva em 0.002s
+2025-10-01 21:38:27,903 - MainThread - INFO - Processamento concluído em 0.043s
+2025-10-01 21:39:03,622 - MainThread - INFO - Iniciando processamento de minhas_imagens/pikachu.jpeg com filtro black_white
+2025-10-01 21:39:03,623 - Worker_0 - INFO - [Load-Thread] Carregando imagem: minhas_imagens/pikachu.jpeg
+2025-10-01 21:39:03,633 - Worker_0 - INFO - [Load-Thread] Imagem carregada em 0.010s - Dimensões: (640, 743)
+2025-10-01 21:39:03,633 - Worker_0 - INFO - [Filter-Thread] Aplicando filtro black_white
+2025-10-01 21:39:03,639 - Worker_0 - INFO - [Filter-Thread] Filtro black_white aplicado em 0.007s
+2025-10-01 21:39:03,640 - Worker_0 - INFO - [Save-Thread] Salvando imagem: output/pikachu_black_white.jpg
+2025-10-01 21:39:03,641 - Worker_0 - INFO - [Save-Thread] Imagem salva em 0.002s
+2025-10-01 21:39:03,641 - MainThread - INFO - Processamento concluído em 0.019s
+2025-10-01 21:45:29,167 - MainThread - INFO - Iniciando processamento de minhas_imagens/pikachu.jpeg com filtro sepia
+2025-10-01 21:45:29,168 - Worker_0 - INFO - [Load-Thread] Carregando imagem: minhas_imagens/pikachu.jpeg
+2025-10-01 21:45:29,177 - Worker_0 - INFO - [Load-Thread] Imagem carregada em 0.009s - Dimensões: (640, 743)
+2025-10-01 21:45:29,178 - Worker_0 - INFO - [Filter-Thread] Aplicando filtro sepia
+2025-10-01 21:45:29,208 - Worker_0 - INFO - [Filter-Thread] Filtro sepia aplicado em 0.031s
+2025-10-01 21:45:29,208 - Worker_0 - INFO - [Save-Thread] Salvando imagem: output/pikachu_sepia.jpg
+2025-10-01 21:45:29,210 - Worker_0 - INFO - [Save-Thread] Imagem salva em 0.002s
+2025-10-01 21:45:29,210 - MainThread - INFO - Processamento concluído em 0.043s
+2025-10-01 21:45:45,570 - MainThread - INFO - Iniciando processamento de minhas_imagens/pikachu.jpeg com filtro vintage
+2025-10-01 21:45:45,571 - Worker_0 - INFO - [Load-Thread] Carregando imagem: minhas_imagens/pikachu.jpeg
+2025-10-01 21:45:45,580 - Worker_0 - INFO - [Load-Thread] Imagem carregada em 0.009s - Dimensões: (640, 743)
+2025-10-01 21:45:45,580 - Worker_0 - INFO - [Filter-Thread] Aplicando filtro vintage
+2025-10-01 21:45:45,618 - Worker_0 - INFO - [Filter-Thread] Filtro vintage aplicado em 0.038s
+2025-10-01 21:45:45,618 - Worker_0 - INFO - [Save-Thread] Salvando imagem: output/pikachu_vintage.jpg
+2025-10-01 21:45:45,620 - Worker_0 - INFO - [Save-Thread] Imagem salva em 0.002s
+2025-10-01 21:45:45,620 - MainThread - INFO - Processamento concluído em 0.050s
