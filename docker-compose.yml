@@ -1,0 +1,48 @@
+version: '3.8'
+services:
+  redis:
+    image: redis:6-alpine
+    ports:
+      - "6379:6379"
+  servidor:
+    build: ./servidor
+    command: python server.py
+    volumes:
+      - ./servidor:/app
+      - ./output:/app/output
+    working_dir: /app
+    environment:
+      - REDIS_HOST=redis
+      - OUTPUT_DIR=/app/output
+      - NOTIFICATION_URL=http://notificacoes:5001/notify
+    depends_on:
+      - redis
+      - notificacoes
+    ports:
+      - "5000:5000"
+  notificacoes:
+    build: ./notificacoes
+    command: python notification_service.py
+    volumes:
+      - ./notificacoes:/app
+    working_dir: /app
+    ports:
+      - "5001:5001"
+    depends_on:
+      - redis
+  estoque:
+    build: ./estoque
+    command: python stock_service.py
+    volumes:
+      - ./estoque:/app
+    working_dir: /app
+    depends_on:
+      - redis
+  cliente:
+    build: ./cliente
+    command: tail -f /dev/null
+    volumes:
+      - ./cliente:/app
+    working_dir: /app
+    depends_on:
+      - servidor
