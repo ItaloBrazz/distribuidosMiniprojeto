@@ -2,6 +2,23 @@
 
 Este é um mini projeto de sistemas distribuídos que processa imagens usando uma arquitetura de microserviços com Docker.
 
+## Análise
+
+
+Este projeto é um sistema que processa imagens de forma automática.
+
+Ele é dividido em várias partes independentes (microsserviços) que trabalham juntas:
+
+    Entrada: Você usa um script (enviar.py) para mandar uma imagem para o sistema.
+
+    Processamento Principal: Um serviço central (servidor) recebe essa imagem, aplica três filtros diferentes (preto e branco, sépia, vintage) e salva as novas imagens numa pasta de resultados chamada output.
+
+    Tarefas em Fila: Depois de processar, o servidor envia uma mensagem para uma fila. Um outro serviço (estoque) fica escutando essa fila e executa uma tarefa em segundo plano quando a mensagem chega.
+
+    Notificações: O servidor também manda um aviso para um serviço de notificacoes, que guarda um registro de que o processamento foi concluído.
+
+O Docker é usado para "empacotar" cada uma dessas partes e fazê-las rodar de forma organizada e conectada, conforme definido no arquivo
+
 ## Descrição
 
 O projeto utiliza Docker para orquestrar contêineres que executam diferentes serviços da aplicação. Um script em Python é usado para enviar imagens para processamento, e os resultados são salvos em uma pasta `output`. As notificações do sistema podem ser consultadas através de um endpoint específico.
